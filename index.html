@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>はじめまして</title>
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --card: #ffffff;
+      --text: #2b2b2b;
+      --muted: #6b6b6b;
+      --accent: #2f6f5e;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1b1d1c;
+        --card: #262928;
+        --text: #ececec;
+        --muted: #a0a4a2;
+        --accent: #6cc3a8;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+      line-height: 1.8;
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    header { padding: 32px 0 16px; }
+    h1 { margin: 0 0 8px; font-size: 2rem; color: var(--accent); }
+    .lead { margin: 0; color: var(--muted); }
+    section {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 16px 0;
+    }
+    h2 { margin: 0 0 8px; font-size: 1.15rem; }
+    ul { margin: 0; padding-left: 1.2em; }
+    footer { margin: 32px 0 8px; text-align: center; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>はじめまして</h1>
+      <p class="lead">ここは、私の最初のウェブページです。</p>
+    </header>
+
+    <section>
+      <h2>自己紹介</h2>
+      <p>ここに、自己紹介の文章を書いてください。名前、住んでいる地域、仕事や学校のことなど、公開してもよい範囲で大丈夫です。</p>
+    </section>
+
+    <section>
+      <h2>好きなこと</h2>
+      <ul>
+        <li>好きなこと その1</li>
+        <li>好きなこと その2</li>
+        <li>好きなこと その3</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>今やっていること</h2>
+      <p>最近始めたことや、これから挑戦したいことを書いてみましょう。</p>
+    </section>
+
+    <footer>最終更新: 2026年10月17日</footer>
+  </main>
+</body>
+</html>
